@@ -1,5 +1,5 @@
 homepage: "https://github.com/LukasFibiger/Targito-Tag-For-SGTM"
 documentation: "https://github.com/LukasFibiger/Targito-Tag-For-SGTM"
 versions:
-  - sha: 
-    changeNotes: 
+  - sha: ecce823fea1816f1e9c24b302e2fb4b0078ead7b
+    changeNotes: Initial commit
