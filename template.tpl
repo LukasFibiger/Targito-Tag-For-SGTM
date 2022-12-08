@@ -309,7 +309,7 @@ var post_data = {
 };
 
 
-//Convert products from ecommerce format to Targito format. If products exists.
+//Convert products from ecommerce format to Targito format. If products exists. 
 if (typeof data.products != 'undefined') {
   //convert JSON string to object, if necessary
   if (typeof data.products == 'string') {
