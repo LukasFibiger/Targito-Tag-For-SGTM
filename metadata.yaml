@@ -1,5 +1,5 @@
 homepage: "https://github.com/LukasFibiger/Targito-Tag-For-SGTM"
 documentation: "https://github.com/LukasFibiger/Targito-Tag-For-SGTM"
 versions:
-  - sha: ee1191e0966f86cc7abaa9434af508f07ff9dd33
-    changeNotes: Ready commit.
+  - sha: 122a052d2f93f9f562e5118970c47376edceb765
+    changeNotes: Add EncodeUri() when I used URL parametrs.
