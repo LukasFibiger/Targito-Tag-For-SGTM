@@ -14,7 +14,6 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Targito",
-  "categories": ["PERSONALIZATION", "ADVERTISING", "CONVERSIONS"],  
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -277,6 +276,7 @@ ___SANDBOXED_JS_FOR_SERVER___
 const JSON = require('JSON');
 const logToConsole = require('logToConsole');
 const sendHttpRequest = require('sendHttpRequest');
+const encodeUri = require('encodeUri');
 
 //If debug_mode On, write complete JSON to Console
 if (data.debugMode == true) {
@@ -309,7 +309,7 @@ var post_data = {
 };
 
 
-//Convert products from ecommerce format to Targito format. If products exists. 
+//Convert products from ecommerce format to Targito format. If products exists.
 if (typeof data.products != 'undefined') {
   //convert JSON string to object, if necessary
   if (typeof data.products == 'string') {
@@ -327,7 +327,7 @@ if (typeof data.products != 'undefined') {
 }
 
 //Setup Endpoint URL
-var url_api = 'https://t.targito.tescoma.pl/s2s/'+data.endpoint;
+var url_api = 'https://t.targito.tescoma.pl/s2s/'+encodeUri(data.endpoint);
 
 //Setup values for endpoints
 switch(data.endpoint) {
